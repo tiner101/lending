@@ -129,11 +129,13 @@ body {
           transform: 0.2s;
   -webkit-transform: translateY(-200%);
           transform: translateY(-200%);
+  opacity: 0;
 }
 
-.menu_active {
+.menu__active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  opacity: 1;
 }
 
 .menu__nav {
@@ -227,9 +229,10 @@ body {
 
 .hero {
   background-color: #f1f1f1;
-  background-size: contain;
-  padding-top: 180px;
+  background-size: cover;
+  padding-top: 120px;
   padding-bottom: 270px;
+  margin-top: 80px;
 }
 
 .hero__title {
@@ -246,7 +249,8 @@ body {
 
 @media (max-width: 991px) {
   .hero {
-    background-size: cover;
+    background-size: 100%;
+    background-position: top right;
   }
 }
 /*# sourceMappingURL=style.css.map */
